@@ -13,7 +13,6 @@ export const HeroSection = ({ onContactClick }: { onContactClick: () => void }) 
       <div className="absolute inset-0 bg-slate-900/70" />
     </div>
     <div className="relative z-10 text-center px-6 max-w-6xl mx-auto text-white animate-fade-in">
-      <p className="text-green-400 tracking-[0.2em] font-medium mb-6 uppercase">Architectural Hardware Professionals</p>
       <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold mb-10 tracking-wide leading-relaxed max-w-5xl mx-auto">
         わが社は常に創意工夫を重ね、<br className="hidden md:block" />創造に挑戦する。<br />
         感謝の心を持ち、信頼を得るよう努力し、<br className="hidden md:block" />社会と調和し続ける。
