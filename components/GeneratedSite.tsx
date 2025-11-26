@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Project, JobPost } from '../types';
 import { ArrowRight, CheckCircle2, MapPin, Phone, Mail, DraftingCompass, Hammer, HardHat } from 'lucide-react';
@@ -6,7 +7,7 @@ export const HeroSection = ({ onContactClick }: { onContactClick: () => void }) 
   <section id="home" className="relative h-screen min-h-[600px] flex items-center justify-center overflow-hidden">
     <div className="absolute inset-0 z-0">
       <img 
-        src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop" 
+        src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=60&w=1200&auto=format&fit=crop" 
         alt="Modern Architecture" 
         className="w-full h-full object-cover"
       />
@@ -74,13 +75,14 @@ export const ServicesSection = () => (
 );
 
 export const PortfolioSection = () => {
+  // Images optimized with width=800 and quality=60 for better performance
   const projects: Project[] = [
-    { id: 1, title: "青山 Sビル様", category: "外装ルーバー / SUS304 HL", image: "https://images.unsplash.com/photo-1487958449943-2429e8be8625?q=80&w=2070&auto=format&fit=crop" },
-    { id: 2, title: "港区 K邸様", category: "螺旋階段 / スチール・木", image: "https://images.unsplash.com/photo-1522050212171-61b01dd24579?q=80&w=2080&auto=format&fit=crop" },
-    { id: 3, title: "渋谷 Tオフィス様", category: "エントランスサッシ / スチール FB", image: "https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2069&auto=format&fit=crop" },
-    { id: 4, title: "新宿 Mホテル様", category: "装飾手摺 / 真鍮古美色", image: "https://images.unsplash.com/photo-1633504460578-12a7b7d5da96?q=80&w=1935&auto=format&fit=crop" },
-    { id: 5, title: "横浜 公共施設", category: "カーテンウォール / アルミ", image: "https://images.unsplash.com/photo-1464938050520-ef2270bb8ce8?q=80&w=2074&auto=format&fit=crop" },
-    { id: 6, title: "銀座 店舗内装", category: "ディスプレイ什器 / SUS鏡面", image: "https://images.unsplash.com/photo-1555601568-c9e6130f0633?q=80&w=2000&auto=format&fit=crop" },
+    { id: 1, title: "青山 Sビル様", category: "外装ルーバー / SUS304 HL", image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=60&w=800&auto=format&fit=crop" },
+    { id: 2, title: "港区 K邸様", category: "螺旋階段 / スチール・木", image: "https://images.unsplash.com/photo-1505330622279-bf7d7fc918f4?q=60&w=800&auto=format&fit=crop" },
+    { id: 3, title: "渋谷 Tオフィス様", category: "エントランスサッシ / スチール FB", image: "https://images.unsplash.com/photo-1497366216548-37526070297c?q=60&w=800&auto=format&fit=crop" },
+    { id: 4, title: "新宿 Mホテル様", category: "装飾手摺 / 真鍮古美色", image: "https://images.unsplash.com/photo-1620626011761-996317b8d101?q=60&w=800&auto=format&fit=crop" },
+    { id: 5, title: "横浜 公共施設", category: "カーテンウォール / アルミ", image: "https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?q=60&w=800&auto=format&fit=crop" },
+    { id: 6, title: "銀座 店舗内装", category: "ディスプレイ什器 / SUS鏡面", image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=60&w=800&auto=format&fit=crop" },
   ];
 
   return (
@@ -98,6 +100,7 @@ export const PortfolioSection = () => {
               <img 
                 src={project.image} 
                 alt={project.title}
+                loading="lazy"
                 className="object-cover w-full h-full transition-transform duration-700 group-hover:scale-110"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
