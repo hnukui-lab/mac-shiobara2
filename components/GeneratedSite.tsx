@@ -77,7 +77,7 @@ export const ServicesSection = () => (
 export const PortfolioSection = () => {
   // Images optimized with width=800 and quality=60 for better performance
   const projects: Project[] = [
-    { id: 1, title: "青山 Sビル様", category: "外装ルーバー / SUS304 HL", image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=60&w=800&auto=format&fit=crop" },
+    { id: 1, title: "青山 Sビル様", category: "外装ルーバー / SUS304 HL", image: "IMG_4317.jpg" },
     { id: 2, title: "港区 K邸様", category: "螺旋階段 / スチール・木", image: "https://images.unsplash.com/photo-1505330622279-bf7d7fc918f4?q=60&w=800&auto=format&fit=crop" },
     { id: 3, title: "渋谷 Tオフィス様", category: "エントランスサッシ / スチール FB", image: "https://images.unsplash.com/photo-1497366216548-37526070297c?q=60&w=800&auto=format&fit=crop" },
     { id: 4, title: "新宿 Mホテル様", category: "装飾手摺 / 真鍮古美色", image: "https://images.unsplash.com/photo-1620626011761-996317b8d101?q=60&w=800&auto=format&fit=crop" },
@@ -303,3 +303,4 @@ export const ContactSection = () => (
     </div>
   </section>
 );
+
